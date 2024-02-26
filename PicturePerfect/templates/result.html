@@ -1,0 +1,24 @@
+<!-- templates/result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoonified Result</title>
+</head>
+<body>
+    <h2>Original Image</h2>
+    <img src="{{ url_for('static', filename='original_image.png') }}" alt="Original Image">
+
+    <h2>Cartoonified Image</h2>
+    <img src="{{ url_for('static', filename='cartoon_image.jpg') }}" alt="Cartoonified Image">
+
+    <a href="{{ url_for('download_cartoon') }}" download="cartoon_image.jpg">
+        <button>Download Cartoon Image</button>
+    </a>
+</body>
+</html>
+
+
+
